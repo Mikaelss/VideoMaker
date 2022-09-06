@@ -1,9 +1,9 @@
 const readline = require('readline-sync')
 function start() {
-  const videoTheme = {}
+  const videoContent = {}
 
-  videoTheme.searchTerm = askAndReturnSearchTerm()
-  videoTheme.prefix = askAndReturnPrefix()
+  videoContent.searchTerm = askAndReturnSearchTerm()
+  videoContent.prefix = askAndReturnPrefix()
 
   function askAndReturnSearchTerm() {
 
@@ -18,6 +18,6 @@ function start() {
 
   return selectedPrefixText
   }
-    console.log(videoTheme.prefix + " " + videoTheme.searchTerm)
+    console.log(videoContent.prefix + " " + videoContent.searchTerm)
   }
 start()
